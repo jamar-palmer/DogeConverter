@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/doge"
+    android:textAlignment="center"
     tools:context=".MainActivity">
+
 
     <ImageView
         android:id="@+id/mainlogo"
@@ -21,62 +24,70 @@
         android:id="@+id/txtDoge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
         android:text="Dogecoin Value"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainlogo" />
 
     <Button
         android:id="@+id/btnConvert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="142dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:background="#cb9800"
         android:onClick="convertClick"
         android:text="CONVERT"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toBottomOf="@+id/editCurrency" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDoge" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editDoge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
-        android:editable="false"
+        android:layout_marginTop="24dp"
+        android:editable="true"
         android:ems="10"
-        android:inputType="number"
+        android:focusable="auto"
+        android:inputType="number|numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDoge" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:editable="true"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <Button
         android:id="@+id/btnSwap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="48dp"
+        android:layout_width="89dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="#cb9800"
+        android:onClick="swapClick"
         android:text="Swap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainlogo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
 </androidx.constraintlayout.widget.ConstraintLayout>
