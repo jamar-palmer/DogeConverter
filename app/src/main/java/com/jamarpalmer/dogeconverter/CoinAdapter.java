@@ -1,6 +1,7 @@
 package com.jamarpalmer.dogeconverter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.View;
@@ -44,11 +45,12 @@ public class CoinAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         LinearLayout linearLayout = new LinearLayout(context);
+        linearLayout.setBackgroundColor(Color.parseColor("#EAEDB9"));
         TextView textView = new TextView(context);
         textView.setText(items.get(position));
         textView.setGravity(Gravity.CENTER);
         textView.setTextSize(20);
-        textView.setPadding(20, 5, 5, 5);
+        textView.setPadding(20, 5, 20, 5);
         linearLayout.addView(textView);
         textView.setTypeface(textView.getTypeface(), Typeface.BOLD);
 

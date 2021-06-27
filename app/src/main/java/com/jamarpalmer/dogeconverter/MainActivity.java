@@ -108,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
         currencyList.add("Litecoin");
         currencyList.add("Uniswap");
         currencyList.add("Polkadot");
+        currencyList.add("USD Coin");
+        currencyList.add("Binance Coin");
+        currencyList.add("Binance USD");
+        currencyList.add("United States Dollar");
     }
 
     //method for performing conversion

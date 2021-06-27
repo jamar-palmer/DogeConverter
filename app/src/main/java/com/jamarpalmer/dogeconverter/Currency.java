@@ -25,22 +25,22 @@ public class Currency {
                 this.rate = 1;
                 break;
             case "Bitcoin":
-                this.rate = 0.00000674;
+                this.rate = 0.00000743;
                 break;
             case "Ethereum":
-                this.rate = 0.00011452;
+                this.rate = 0.00013350;
                 break;
             case "XRP":
-                this.rate = 0.36263059;
+                this.rate = 0.40216222;
                 break;
             case "Tether":
-                this.rate = 0.22300758;
+                this.rate = 0.24295993;
                 break;
             case "Stellar":
                 this.rate = 0.88691939;
                 break;
             case "Cardano":
-                this.rate = 0.18237653;
+                this.rate = 0.19257828;
                 break;
             case "Litecoin":
                 this.rate = 0.00177711;
@@ -49,7 +49,19 @@ public class Currency {
                 this.rate = 0.01270890;
                 break;
             case "Polkadot":
-                this.rate = 0.01436032;
+                this.rate = 0.01713613;
+                break;
+            case "Binance Coin":
+                this.rate = 0.00089413;
+                break;
+            case "USD Coin":
+                this.rate = 0.24321441;
+                break;
+            case "Binance USD":
+                this.rate = 0.24330440;
+                break;
+            case "United States Dollar":
+                this.rate = 0.243299;
                 break;
             default:
         }
